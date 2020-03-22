@@ -9,7 +9,18 @@
       </div>
     </div>
 
-    <div class="col" v-if="articles">
+    <div class="col" v-if="storedArticles">
+      <Article
+        v-for="article in articles"
+        v-bind:key="article._id"
+        v-bind:_id="article._id"
+        v-bind:username="article.username"
+        v-bind:title="article.title"
+        v-bind:content="article.content"
+      ></Article>
+    </div>
+
+    <div v-else-if="articles" class="col">
       <Article
         v-for="article in articles"
         v-bind:key="article._id"
@@ -47,6 +58,11 @@ export default {
   mounted() {
     this.loading = true;
     this.getArticles();
+  },
+  computed: {
+    storedArticles() {
+      return this.$store.state.storedArticles;
+    }
   },
   methods: {
     getArticles() {
