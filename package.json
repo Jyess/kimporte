@@ -1,6 +1,6 @@
 {
-  "name": "client",
-  "version": "0.1.0",
+  "name": "kimporte",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -9,8 +9,7 @@
     "start": "node server/index.js"
   },
   "engines": {
-    "node": ">=10.0.0",
-    "npm": ">=6.0.0"
+    "node": "12.16.x"
   },
   "dependencies": {
     "axios": "^0.19.2",
