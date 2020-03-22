@@ -8,6 +8,10 @@
     "lint": "vue-cli-service lint",
     "start": "node server/index.js"
   },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
   "dependencies": {
     "axios": "^0.19.2",
     "core-js": "^3.6.4",
