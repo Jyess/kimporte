@@ -21,11 +21,10 @@
           role="alert"
         >Une erreur est survenue.</div>
 
-        <div
-          v-if="this.successMessage"
-          class="alert alert-success"
-          role="alert"
-        >{{ this.successMessage }}</div>
+        <div v-if="this.successMessage" class="alert alert-success" role="alert">
+          {{ this.successMessage }}
+          <router-link to="/connexion">Connectez-vous</router-link>.
+        </div>
 
         <div class="form-group">
           <label for="username">Nom d'utilisateur</label>
