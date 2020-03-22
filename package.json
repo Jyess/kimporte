@@ -9,7 +9,8 @@
     "start": "node server/index.js"
   },
   "engines": {
-    "node": "12.16.x"
+    "node": "12.14.0",
+    "npm": "6.13.4"
   },
   "dependencies": {
     "axios": "^0.19.2",
