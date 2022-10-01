@@ -46,6 +46,7 @@ simple API made with restdb.io where all the data reside.
 4. Run `yarn install`
 5. Run `yarn serve`
 6. Run `yarn encore dev`
+7. Ask me for access to the API :)
 
 ## Contact
 Axel IGHIR - <a mailto="axel.ighir@outlook.fr">axel.ighir@outlook.fr</a><br>
